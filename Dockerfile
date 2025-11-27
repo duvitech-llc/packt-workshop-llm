@@ -44,6 +44,7 @@ RUN apt-get update -q && \
     ros-${ROS_DISTRO}-nav2-core \
     ros-${ROS_DISTRO}-nav2-common \
     ros-${ROS_DISTRO}-nav2-msgs \
+    ros-${ROS_DISTRO}-rqt-robot-steering \
     ros-${ROS_DISTRO}-nav2-lifecycle-manager \
     ros-${ROS_DISTRO}-nav2-map-server \
     ros-${ROS_DISTRO}-nav2-behavior-tree \
