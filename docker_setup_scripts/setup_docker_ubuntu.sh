@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-ubuntu_version=$1
-architecture=$2
 
 echo "Checking for NVIDIA GPU and driver..."
 
