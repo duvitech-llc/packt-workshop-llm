@@ -221,6 +221,11 @@ Open your browser:
 
 👉 **[http://127.0.0.1:6080/](http://127.0.0.1:6080/)**
 
+<p align="center">
+  <img src="img/vnc.png" alt="noVNC Ubuntu desktop" width="800" />
+</p>
+
+
 You will see a complete workspace with:
 
 * ROS 2 Jazzy
