@@ -3,3 +3,6 @@ openai
 langchain-openai
 jpl-rosa
 transforms3d
+empy
+catkin-pkg
+lark-parser

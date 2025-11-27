@@ -24,7 +24,7 @@ RUN apt-get update -q && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-# Install simulation packages and navigation/manipulation frameworks
+# Install simulation packages and navigation/manipulation frameworks (include pcl)
 RUN apt-get update -q && \
     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
     ros-${ROS_DISTRO}-ros-gz \
@@ -63,7 +63,9 @@ RUN apt-get update -q && \
     ros-${ROS_DISTRO}-moveit \
     ros-${ROS_DISTRO}-moveit-ros \
     ros-${ROS_DISTRO}-moveit-planners \
-    ros-${ROS_DISTRO}-moveit-plugins && \
+    ros-${ROS_DISTRO}-moveit-plugins \
+    ros-${ROS_DISTRO}-pcl-ros \
+    libpcl-dev && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
@@ -87,9 +89,9 @@ RUN chown -R ubuntu:ubuntu /opt/venv
 RUN mkdir -p /home/ubuntu/master_ros2_ws/src && \
     chown -R ubuntu:ubuntu /home/ubuntu/master_ros2_ws
 
-COPY ros2_basic_agent /home/ubuntu/master_ros2_ws/src/ros2_basic_agent
+COPY demo_pkgs /home/ubuntu/master_ros2_ws/src/demo_pkgs
 
-RUN chown -R ubuntu:ubuntu /home/ubuntu/master_ros2_ws/src/ros2_basic_agent
+RUN chown -R ubuntu:ubuntu /home/ubuntu/master_ros2_ws/src/demo_pkgs
 
 # Set the virtual environment path
 ENV PATH="/opt/venv/bin:$PATH"
