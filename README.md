@@ -15,10 +15,9 @@ Once the container is launched, you will get an **Ubuntu desktop inside your web
 1. [Overview](#overview)
 2. [System Requirements](#system-requirements)
 3. [Docker Installation](#docker-installation)
-
-   * [Ubuntu 24.04 LTS](#a-ubuntu-2404-lts)
-   * [Windows 11 (WSL + Docker Desktop)](#b-windows-11-wsl--docker-desktop)
-   * [macOS](#c-macos)
+   - [Ubuntu 24.04 LTS](#ubuntu-2404-lts)
+   - [Windows 11 (WSL + Docker Desktop)](#windows-11-wsl--docker-desktop)
+   - [macOS](#macos)
 4. [Run the Workshop Docker Container](#run-the-workshop-docker-container)
 5. [Access the Web-based Ubuntu Desktop](#access-the-web-based-ubuntu-desktop)
 6. [Stopping the Container](#stopping-the-container)
