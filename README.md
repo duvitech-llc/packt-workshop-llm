@@ -72,7 +72,7 @@ Manual installation of Docker on Ubuntu 24.04
 
 <p align="center">
   <a href="https://youtu.be/FWWq83IGUgw" target="_blank" rel="noopener noreferrer">
-    <img src="https://img.youtube.com/vi/FWWq83IGUgw/hqdefault.jpg" alt="Additional workshop video" width="560" height="315"/>
+    <img src="https://img.youtube.com/vi/FWWq83IGUgw/hqdefault.jpg" alt="Additional workshop video" width="640" height="480"/>
   </a>
 </p>
 
@@ -81,7 +81,7 @@ Manual Installation of Docker on Ubuntu 22.04
 
 <p align="center">
   <a href="https://youtu.be/EuSVD7kVCUY" target="_blank" rel="noopener noreferrer">
-    <img src="https://img.youtube.com/vi/EuSVD7kVCUY/hqdefault.jpg" alt="Workshop video" width="560" height="315"/>
+    <img src="https://img.youtube.com/vi/EuSVD7kVCUY/hqdefault.jpg" alt="Workshop video" width="640" height="480"/>
   </a>
 </p>
 
@@ -182,7 +182,7 @@ Works on:
 
 <p align="center">
   <a href="https://youtu.be/-EXlfSsP49A" target="_blank" rel="noopener noreferrer">
-    <img src="https://img.youtube.com/vi/-EXlfSsP49A/hqdefault.jpg" alt="Workshop video" width="560" height="315"/>
+    <img src="https://img.youtube.com/vi/-EXlfSsP49A/hqdefault.jpg" alt="Workshop video" width="640" height="480"/>
   </a>
 </p>
 
