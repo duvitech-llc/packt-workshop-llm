@@ -29,6 +29,7 @@ RUN apt-get update -q && \
     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
     ros-${ROS_DISTRO}-ros-gz \
     ros-${ROS_DISTRO}-turtlebot4-simulator \
+    ros-${ROS_DISTRO}-leo-simulator \    
     ros-${ROS_DISTRO}-turtlebot4-description \
     ros-${ROS_DISTRO}-turtlebot4-navigation \
     ros-${ROS_DISTRO}-turtlebot3-simulations \
@@ -74,6 +75,7 @@ RUN apt-get update -q && \
     ros-${ROS_DISTRO}-rqt-joint-trajectory-controller \
     ros-${ROS_DISTRO}-gripper-controllers \    
     ros-${ROS_DISTRO}-moveit-simple-controller-manager \    
+    ros-${ROS_DISTRO}-usb-cam \    
     libpcl-dev && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
