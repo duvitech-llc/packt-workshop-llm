@@ -107,9 +107,19 @@ On Windows, we use:
 
 No Docker installation is needed **inside WSL** — Docker Desktop handles everything.
 
+Windows 11 
+
 <p align="center">
   <a href="https://youtu.be/fsR8fj7iCNY" target="_blank" rel="noopener noreferrer">
     <img src="https://img.youtube.com/vi/fsR8fj7iCNY/hqdefault.jpg" alt="Workshop intro video" width="640" height="480"/>
+  </a>
+</p>
+
+Windows 10
+
+<p align="center">
+  <a href="https://youtu.be/kv2oQeg6MdE" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.youtube.com/vi/kv2oQeg6MdE/hqdefault.jpg" alt="Workshop intro video" width="640" height="480"/>
   </a>
 </p>
 
