@@ -16,7 +16,7 @@ setup(
         (os.path.join('share', package_name, 'config'), glob('config/*'))  # Add this line
 
     ],
-    install_requires=['setuptools','langchain','langchain-openai','python-dotenv'],
+    install_requires=['setuptools','langchain','langchain-openai','python-dotenv','requests'],
     zip_safe=True,
     maintainer='Lentin Joseph',
     maintainer_email='runtimerobotics@gmail.com',
@@ -25,11 +25,12 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'ros2_ai_agent_basic = ros2_basic_agent.ros2_ai_agent_basic:main',            
-            'ros2_ai_agent_basic_tools = ros2_basic_agent.ros2_ai_agent_basic_tools:main',            
+            'ros2_ai_agent_basic = ros2_basic_agent.ros2_ai_agent_basic:main',
+            'ros2_ai_agent_basic_tools = ros2_basic_agent.ros2_ai_agent_basic_tools:main',
             'ros2_ai_agent_turtlesim = ros2_basic_agent.ros2_ai_agent_turtlesim:main',
             'ros2_ai_agent_nav2 = ros2_basic_agent.ros2_ai_agent_turtlebo3_nav2:main',
-            'ros2_ai_agent_moveit2 = ros2_basic_agent.ros2_ai_agent_ur_moveit2:main',            
+            'ros2_ai_agent_moveit2 = ros2_basic_agent.ros2_ai_agent_ur_moveit2:main',
+            'ros2_ai_agent_ollama = ros2_basic_agent.ros2_ai_agent_ollama:main',
         ],
     },
 )
