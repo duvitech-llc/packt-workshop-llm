@@ -108,7 +108,7 @@ class ROS2AIAgent(Node):
         share_dir = get_package_share_directory('ros2_basic_agent')
         config_dir = share_dir + '/config' + '/openai.env'
         load_dotenv(Path(config_dir))
-        self.ollama_url = os.environ.get('OLLAMA_URL', 'http://192.168.5.70:11434')
+        self.ollama_url = os.environ.get('OLLAMA_URL', 'http://localhost:11434')
         self.ollama_model = os.environ.get('OLLAMA_MODEL', 'llama3.1:8b')
 
     def move_to_goal(self, x: float, y: float) -> str:
