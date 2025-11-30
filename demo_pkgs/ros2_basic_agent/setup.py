@@ -32,6 +32,7 @@ setup(
             'ros2_ai_agent_moveit2 = ros2_basic_agent.ros2_ai_agent_ur_moveit2:main',
             'ros2_ai_agent_ollama = ros2_basic_agent.ros2_ai_agent_ollama:main',
             'ros2_ai_agent_turtlesim_ollama = ros2_basic_agent.ros2_ai_agent_turtlesim_ollama:main',
+            'ros2_ai_agent_turtlebo3_nav2_ollama = ros2_basic_agent.ros2_ai_agent_turtlebo3_nav2_ollama:main',
         ],
     },
 )
