@@ -451,3 +451,20 @@ ros2 topic pub --once /prompt std_msgs/msg/String "{data: 'rotate 90
 degree '}"
 
 ```
+
+
+```
+Terminal 1
+ros2 launch ros2_basic_agent start_turtlebot3_nav2_ollama_agent.py
+
+Terminal 2
+
+ros2 topic pub --once /prompt std_msgs/msg/String "{data: 'What is the
+current position of the robot?'}"
+
+ros2 topic pub --once /prompt std_msgs/msg/String "{data: 'Move the robot
+to position x=1.5, y=0.5'}"
+publisher: beginning loop
+publishing #1: std_msgs.msg.String(data='Move the robot to position x=1.5, y=0.5')
+
+```
