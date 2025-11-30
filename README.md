@@ -373,3 +373,14 @@ README.md
 
 ---
 
+# Example Agent
+```
+Terminal 1
+ros2 launch ros2_basic_agent start_ros2_basic_agent.py
+
+Terminal 2
+
+ros2 topic pub --once /prompt std_msgs/msg/String "{data: 'What ROS
+distribution am I using?'}"
+
+```
