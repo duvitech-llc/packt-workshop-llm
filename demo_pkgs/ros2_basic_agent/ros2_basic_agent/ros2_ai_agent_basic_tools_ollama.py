@@ -84,9 +84,9 @@ class ROS2AIAgent(Node):
             )
             raise RuntimeError("langchain_ollama not installed or import failed")
 
-        # Example: use a local model you pulled into Ollama, e.g. 'llama3.1' or 'gpt-oss:20b'
+        # Example: use a local model you pulled into Ollama, e.g. 'llama3.1:8b' or 'gpt-oss:20b'
         # Tune model name and temperature as you like
-        self.llm = ChatOllama(model="llama3.1", temperature=0)
+        self.llm = ChatOllama(model="llama3.1:8b", temperature=0)
 
         # ---- Agent construction ----
         # Use LangChain's generic create_agent so the same agent logic can run with Ollama
