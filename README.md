@@ -220,6 +220,19 @@ docker pull runtimerobotics/ros2_llm_workshop:jazzy
 docker run -p 6080:80 --security-opt seccomp=unconfined --shm-size=512m runtimerobotics/ros2_llm_workshop:jazzy
 ```
 
+NVIDIA Support:
+```bash
+docker run -it --rm \
+  -p 6080:80 \
+  --security-opt seccomp=unconfined \
+  --shm-size=512m \
+  --gpus all \
+  -e NVIDIA_VISIBLE_DEVICES=all \
+  -e NVIDIA_DRIVER_CAPABILITIES=compute,utility \
+  runtimerobotics/ros2_llm_workshop:jazzy
+
+```
+
 or
 
 If you want to add **CAMERA** support, use this
@@ -238,6 +251,12 @@ This starts:
 * A web server for noVNC remote desktop
 
 ---
+
+
+# Example
+```
+ros2 launch nav2_bringup tb3_simulation_launch.py headless:=False
+```
 
 # **5. Access the Web-based Ubuntu Desktop**
 
