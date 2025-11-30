@@ -215,6 +215,8 @@ Works on:
 Once Docker is installed on any OS, run:
 
 ```bash
+docker pull runtimerobotics/ros2_llm_workshop:jazzy
+
 docker run -p 6080:80 --security-opt seccomp=unconfined --shm-size=512m runtimerobotics/ros2_llm_workshop:jazzy
 ```
 
@@ -236,6 +238,8 @@ or
 If you want to add **CAMERA** support, use this
 
 ```bash
+docker pull runtimerobotics/ros2_llm_workshop:jazzy
+
 docker run -p 6080:80 --security-opt seccomp=unconfined --shm-size=512m --device=/dev/video0 runtimerobotics/ros2_llm_workshop:jazzy
 ```
 
@@ -274,7 +278,67 @@ You will see a complete workspace with:
 
 All exercises will be performed inside this desktop.
 
----
+# **5.1 . Build the ROS 2 workspace**
+
+Take terminator and build the ROS 2 workspace using following commands
+
+```
+cd master_ros2_ws/
+
+colcon build
+
+source install/setup.bash
+```
+
+# **5.2 . Test the following launch files working or not**
+
+**Refer Page no: 226 of Mastering ROS 2 book**
+
+Launching rrbot simulation
+
+```
+ros2 launch rrbot_gazebo rrbot_gazebo.launch.py
+```
+
+next is 
+
+**Refer Page no: 228 of Mastering ROS 2 book**
+
+Launching diffbot simulation
+
+```
+ros2 launch diffbot_gazebo diffbot_gz.launch.py
+```
+
+next is 
+
+**Refer Page no: 230 of Mastering ROS 2 book**
+
+Launching rosbot simulation
+
+```
+ros2 launch rosbot_description gazebo.launch.py
+```
+
+next is 
+
+**Refer Page no: 310 of Mastering ROS 2 book**
+
+Turtlebot 3 simulation with Nav2
+
+```
+ros2 launch nav2_bringup tb3_simulation_launch.py headless:=False
+```
+
+next is 
+
+UR 5 3 simulation with MoveIt2
+
+```
+ros2 launch ur_simulation_gz ur_sim_moveit.launch.py
+```
+
+
 
 ### For camera support
 
@@ -283,6 +347,8 @@ Install following command in the container  to get camera driver support
 ```
 python3 -m pip install "pydantic<2"
 ```
+
+
 
 # **6. Stopping the Container**
 
