@@ -384,6 +384,8 @@ ros2 topic pub --once /prompt std_msgs/msg/String "{data: 'What ROS
 distribution am I using?'}"
 
 ```
+
+```
 Terminal 1
 ros2 launch ros2_basic_agent start_turtlebot3_nav2_agent.py
 
@@ -422,6 +424,18 @@ position of end effector and reduce z value by 0.2'}"
 
 ```
 
+```
+Terminal 1
+
+ros2 launch ros2_basic_agent start_ros2_ollama_agent.py
+
+
+Terminal 2
+
+ros2 topic pub --once /prompt std_msgs/msg/String "{data: 'What ROS
+distribution am I using?'}"
+
+```
 
 ```
 Terminal 1
