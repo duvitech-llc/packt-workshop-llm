@@ -10,7 +10,7 @@ Behavior:
   the model in a second request so the model can return a final answer.
 
 Configuration:
-- By default this will talk to Ollama at `http://192.168.5.70:11434` and use
+- By default this will talk to Ollama at `http://localhost:11434` and use
   model `llama3.1:8b`.
 - These values can be overridden with environment variables `OLLAMA_URL` and `OLLAMA_MODEL`.
 
@@ -45,7 +45,7 @@ class ROS2AIAgentOllama(Node):
             pass
 
         # Ollama server URL and model
-        self.ollama_url = os.environ.get('OLLAMA_URL', 'http://192.168.5.70:11434')
+        self.ollama_url = os.environ.get('OLLAMA_URL', 'http://localhost:11434')
         self.model = os.environ.get('OLLAMA_MODEL', 'llama3.1:8b')
 
         # Subscribe to prompts

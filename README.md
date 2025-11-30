@@ -404,6 +404,28 @@ position and then move the robot 1 meters forward'}"
 
 ```
 Terminal 1
+ros2 launch ros2_basic_agent start_ur_moveit2_agent.py
+
+Terminal 2
+
+ros2 topic pub --once /prompt std_msgs/msg/String "data: 'Move the end
+effector to position x=-0.392, y=0.358, z=0.623'"
+
+ros2 topic pub --once /prompt std_msgs/msg/String "data: 'Move the robot
+to home position'"
+
+ros2 topic pub --once /prompt std_msgs/msg/String "data: 'Get the current
+gripper pose'"
+
+ros2 topic pub -1 /prompt std_msgs/msg/String "{data: 'Get the current
+position of end effector and reduce z value by 0.2'}"
+
+```
+
+
+```
+Terminal 1
+
 ros2 launch ros2_basic_agent start_turtlesim_ollama_agent.py
 
 Terminal 2

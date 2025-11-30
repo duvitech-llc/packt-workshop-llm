@@ -8,7 +8,7 @@ JSON object like {"tool":"move_forward","args":{"distance":2}}. The
 node executes the tool and returns the tool result to the model for a final
 answer.
 
-Default Ollama server: http://192.168.5.70:11434
+Default Ollama server: http://localhost:11434
 Default model: llama3.1:8b
 """
 import os
@@ -42,7 +42,7 @@ class ROS2AIAgentTurtlesimOllama(Node):
             pass
 
         # Ollama config
-        self.ollama_url = os.environ.get('OLLAMA_URL', 'http://192.168.5.70:11434')
+        self.ollama_url = os.environ.get('OLLAMA_URL', 'http://localhost:11434')
         self.model = os.environ.get('OLLAMA_MODEL', 'llama3.1:8b')
 
         # Turtlesim state
